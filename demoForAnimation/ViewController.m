@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "LiveGiftFerrari.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) LiveGiftFerrari *ferrari;
 
 @end
 
@@ -16,7 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.ferrari = [[LiveGiftFerrari alloc] init];
+    [self.ferrari construct];
+    self.ferrari.center = self.view.center;
+    [self.view addSubview:self.ferrari];
+    [self.ferrari play];
 }
 
 

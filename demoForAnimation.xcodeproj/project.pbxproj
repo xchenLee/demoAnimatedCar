@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CBD75B1DE74D4BD5804A489 /* libPods-demoForAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 718CE3F779E2F1C2277D3763 /* libPods-demoForAnimation.a */; };
 		9333961F1EF2A1D400C5A1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9333961E1EF2A1D400C5A1B7 /* main.m */; };
 		933396221EF2A1D400C5A1B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396211EF2A1D400C5A1B7 /* AppDelegate.m */; };
 		933396251EF2A1D400C5A1B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396241EF2A1D400C5A1B7 /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		9333962D1EF2A1D400C5A1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9333962B1EF2A1D400C5A1B7 /* LaunchScreen.storyboard */; };
 		933396381EF2A1D400C5A1B7 /* demoForAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396371EF2A1D400C5A1B7 /* demoForAnimationTests.m */; };
 		933396431EF2A1D500C5A1B7 /* demoForAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */; };
+		A10F32041EF2E82A004C5022 /* LiveGiftFerrari.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */; };
+		A10F32061EF2E8C3004C5022 /* car in Resources */ = {isa = PBXBuildFile; fileRef = A10F32051EF2E8C3004C5022 /* car */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		718CE3F779E2F1C2277D3763 /* libPods-demoForAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demoForAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9333961A1EF2A1D400C5A1B7 /* demoForAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoForAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9333961E1EF2A1D400C5A1B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		933396201EF2A1D400C5A1B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		9333963E1EF2A1D500C5A1B7 /* demoForAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoForAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoForAnimationUITests.m; sourceTree = "<group>"; };
 		933396441EF2A1D500C5A1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10F31FF1EF2E72B004C5022 /* NativeAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAnimatedView.h; sourceTree = "<group>"; };
+		A10F32021EF2E82A004C5022 /* LiveGiftFerrari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveGiftFerrari.h; sourceTree = "<group>"; };
+		A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveGiftFerrari.m; sourceTree = "<group>"; };
+		A10F32051EF2E8C3004C5022 /* car */ = {isa = PBXFileReference; lastKnownFileType = folder; path = car; sourceTree = "<group>"; };
+		B8780391D235C6A6D05EDF09 /* Pods-demoForAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoForAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-demoForAnimation/Pods-demoForAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		EACE510EEC1CBDDAD9BE4FD0 /* Pods-demoForAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoForAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demoForAnimation/Pods-demoForAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBD75B1DE74D4BD5804A489 /* libPods-demoForAnimation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +92,13 @@
 		933396111EF2A1D400C5A1B7 = {
 			isa = PBXGroup;
 			children = (
+				A10F32051EF2E8C3004C5022 /* car */,
 				9333961C1EF2A1D400C5A1B7 /* demoForAnimation */,
 				933396361EF2A1D400C5A1B7 /* demoForAnimationTests */,
 				933396411EF2A1D500C5A1B7 /* demoForAnimationUITests */,
 				9333961B1EF2A1D400C5A1B7 /* Products */,
+				D1BFBDB189B025D1F41EBEA9 /* Pods */,
+				E28BB417CC72DB19E8503E1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +124,9 @@
 				9333962B1EF2A1D400C5A1B7 /* LaunchScreen.storyboard */,
 				9333962E1EF2A1D400C5A1B7 /* Info.plist */,
 				9333961D1EF2A1D400C5A1B7 /* Supporting Files */,
+				A10F31FF1EF2E72B004C5022 /* NativeAnimatedView.h */,
+				A10F32021EF2E82A004C5022 /* LiveGiftFerrari.h */,
+				A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */,
 			);
 			path = demoForAnimation;
 			sourceTree = "<group>";
@@ -140,6 +157,23 @@
 			path = demoForAnimationUITests;
 			sourceTree = "<group>";
 		};
+		D1BFBDB189B025D1F41EBEA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EACE510EEC1CBDDAD9BE4FD0 /* Pods-demoForAnimation.debug.xcconfig */,
+				B8780391D235C6A6D05EDF09 /* Pods-demoForAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E28BB417CC72DB19E8503E1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				718CE3F779E2F1C2277D3763 /* libPods-demoForAnimation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 933396471EF2A1D500C5A1B7 /* Build configuration list for PBXNativeTarget "demoForAnimation" */;
 			buildPhases = (
+				95284BBDE758627C2BB7675A /* [CP] Check Pods Manifest.lock */,
 				933396161EF2A1D400C5A1B7 /* Sources */,
 				933396171EF2A1D400C5A1B7 /* Frameworks */,
 				933396181EF2A1D400C5A1B7 /* Resources */,
+				38B3F92E9CA68E72E5E92E0B /* [CP] Embed Pods Frameworks */,
+				6DF1A6638E184BAEE83E8BA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9333962D1EF2A1D400C5A1B7 /* LaunchScreen.storyboard in Resources */,
+				A10F32061EF2E8C3004C5022 /* car in Resources */,
 				9333962A1EF2A1D400C5A1B7 /* Assets.xcassets in Resources */,
 				933396281EF2A1D400C5A1B7 /* Main.storyboard in Resources */,
 			);
@@ -271,12 +309,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38B3F92E9CA68E72E5E92E0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-demoForAnimation/Pods-demoForAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DF1A6638E184BAEE83E8BA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-demoForAnimation/Pods-demoForAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95284BBDE758627C2BB7675A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		933396161EF2A1D400C5A1B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				933396251EF2A1D400C5A1B7 /* ViewController.m in Sources */,
+				A10F32041EF2E82A004C5022 /* LiveGiftFerrari.m in Sources */,
 				933396221EF2A1D400C5A1B7 /* AppDelegate.m in Sources */,
 				9333961F1EF2A1D400C5A1B7 /* main.m in Sources */,
 			);
@@ -427,6 +514,7 @@
 		};
 		933396481EF2A1D500C5A1B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EACE510EEC1CBDDAD9BE4FD0 /* Pods-demoForAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24UV6VXUR4;
@@ -439,6 +527,7 @@
 		};
 		933396491EF2A1D500C5A1B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8780391D235C6A6D05EDF09 /* Pods-demoForAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24UV6VXUR4;
@@ -518,6 +607,7 @@
 				933396491EF2A1D500C5A1B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9333964A1EF2A1D500C5A1B7 /* Build configuration list for PBXNativeTarget "demoForAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +616,7 @@
 				9333964C1EF2A1D500C5A1B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9333964D1EF2A1D500C5A1B7 /* Build configuration list for PBXNativeTarget "demoForAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +625,7 @@
 				9333964F1EF2A1D500C5A1B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
