@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     self.ferrari = [[LiveGiftFerrari alloc] init];
+    [self.ferrari loadSources];
     [self.ferrari construct];
     self.ferrari.center = self.view.center;
     [self.view addSubview:self.ferrari];
