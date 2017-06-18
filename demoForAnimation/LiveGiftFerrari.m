@@ -112,7 +112,7 @@ static const CGFloat kFerrariRDoorH = 96.0;
     tireFrame.origin.y = self.frame.size.height - tireFrame.size.height - [self valueCompat:78];
     
     CGRect btireFrame = CGRectMake(0, 0, [self valueCompat:76], [self valueCompat:76]);
-    btireFrame.origin.x = [self valueCompat:582.0];
+    btireFrame.origin.x = [self valueCompat:583.0];
     btireFrame.origin.y = self.frame.size.height - tireFrame.size.height - [self valueCompat:92];
     
     //车身cover
@@ -179,10 +179,10 @@ static const CGFloat kFerrariRDoorH = 96.0;
         
         
         //Section 1
-        [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.2 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.15 animations:^{
             self.carBox.frame = frame;
-            [self.fTireFrame.layer setTransform:CATransform3DRotate(self.fTireFrame.layer.transform, M_PI, 0, 0, -1)];
-            [self.bTireFrame.layer setTransform:CATransform3DRotate(self.bTireFrame.layer.transform, M_PI, 0, 0, -1)];
+            [self.fTireFrame.layer setTransform:CATransform3DRotate(self.fTireFrame.layer.transform, 3.14, 0, 0, -1)];
+            [self.bTireFrame.layer setTransform:CATransform3DRotate(self.bTireFrame.layer.transform, 3.14, 0, 0, -1)];
         }];
         
         //Section 2
@@ -217,12 +217,12 @@ static const CGFloat kFerrariRDoorH = 96.0;
         
         //Section 7
         [UIView addKeyframeWithRelativeStartTime:0.85 relativeDuration:0.15 animations:^{
-            [self.fTireFrame.layer setTransform:CATransform3DRotate(self.fTireFrame.layer.transform, M_PI, 0, 0, -1)];
-            [self.bTireFrame.layer setTransform:CATransform3DRotate(self.bTireFrame.layer.transform, M_PI, 0, 0, -1)];
+            [self.fTireFrame.layer setTransform:CATransform3DRotate(self.fTireFrame.layer.transform, 3.14, 0, 0, -1)];
+            [self.bTireFrame.layer setTransform:CATransform3DRotate(self.bTireFrame.layer.transform, 3.14, 0, 0, -1)];
         }];
         
         //Section 8
-        [UIView addKeyframeWithRelativeStartTime:0.9 relativeDuration:0.1 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.92 relativeDuration:0.08 animations:^{
             self.carBox.frame = endFrame;
         }];
         
