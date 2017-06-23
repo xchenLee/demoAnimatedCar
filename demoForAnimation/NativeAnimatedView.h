@@ -10,13 +10,13 @@
 
 @protocol NativeAnimatedView <NSObject>
 
+- (NSString *)uniqueIdentifier;
+
 @optional
+
 - (void)loadSources;
 - (void)construct;
 - (void)play;
 - (void)stop;
-- (void)clear;
-
-- (CGFloat)scaleRate;
 
 @end

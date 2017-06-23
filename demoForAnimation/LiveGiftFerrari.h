@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NativeAnimatedView.h"
+#import "LiveNativeGift.h"
 
-@interface LiveGiftFerrari : UIView<NativeAnimatedView>
+
+@interface LiveGiftFerrari : LiveNativeGift
 
 @end

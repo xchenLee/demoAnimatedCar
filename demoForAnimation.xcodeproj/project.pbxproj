@@ -16,6 +16,7 @@
 		9333962D1EF2A1D400C5A1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9333962B1EF2A1D400C5A1B7 /* LaunchScreen.storyboard */; };
 		933396381EF2A1D400C5A1B7 /* demoForAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396371EF2A1D400C5A1B7 /* demoForAnimationTests.m */; };
 		933396431EF2A1D500C5A1B7 /* demoForAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */; };
+		93AF4CBA1EF7B18D00F604CB /* LiveNativeGift.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AF4CB91EF7B18D00F604CB /* LiveNativeGift.m */; };
 		A10F32041EF2E82A004C5022 /* LiveGiftFerrari.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */; };
 		A10F32061EF2E8C3004C5022 /* car in Resources */ = {isa = PBXBuildFile; fileRef = A10F32051EF2E8C3004C5022 /* car */; };
 /* End PBXBuildFile section */
@@ -55,7 +56,8 @@
 		9333963E1EF2A1D500C5A1B7 /* demoForAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoForAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoForAnimationUITests.m; sourceTree = "<group>"; };
 		933396441EF2A1D500C5A1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A10F31FF1EF2E72B004C5022 /* NativeAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAnimatedView.h; sourceTree = "<group>"; };
+		93AF4CB81EF7B18D00F604CB /* LiveNativeGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveNativeGift.h; sourceTree = "<group>"; };
+		93AF4CB91EF7B18D00F604CB /* LiveNativeGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveNativeGift.m; sourceTree = "<group>"; };
 		A10F32021EF2E82A004C5022 /* LiveGiftFerrari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveGiftFerrari.h; sourceTree = "<group>"; };
 		A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveGiftFerrari.m; sourceTree = "<group>"; };
 		A10F32051EF2E8C3004C5022 /* car */ = {isa = PBXFileReference; lastKnownFileType = folder; path = car; sourceTree = "<group>"; };
@@ -118,15 +120,16 @@
 				933396201EF2A1D400C5A1B7 /* AppDelegate.h */,
 				933396211EF2A1D400C5A1B7 /* AppDelegate.m */,
 				933396231EF2A1D400C5A1B7 /* ViewController.h */,
+				93AF4CB81EF7B18D00F604CB /* LiveNativeGift.h */,
+				93AF4CB91EF7B18D00F604CB /* LiveNativeGift.m */,
 				933396241EF2A1D400C5A1B7 /* ViewController.m */,
+				A10F32021EF2E82A004C5022 /* LiveGiftFerrari.h */,
+				A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */,
 				933396261EF2A1D400C5A1B7 /* Main.storyboard */,
 				933396291EF2A1D400C5A1B7 /* Assets.xcassets */,
 				9333962B1EF2A1D400C5A1B7 /* LaunchScreen.storyboard */,
 				9333962E1EF2A1D400C5A1B7 /* Info.plist */,
 				9333961D1EF2A1D400C5A1B7 /* Supporting Files */,
-				A10F31FF1EF2E72B004C5022 /* NativeAnimatedView.h */,
-				A10F32021EF2E82A004C5022 /* LiveGiftFerrari.h */,
-				A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */,
 			);
 			path = demoForAnimation;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				A10F32041EF2E82A004C5022 /* LiveGiftFerrari.m in Sources */,
 				933396221EF2A1D400C5A1B7 /* AppDelegate.m in Sources */,
 				9333961F1EF2A1D400C5A1B7 /* main.m in Sources */,
+				93AF4CBA1EF7B18D00F604CB /* LiveNativeGift.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
