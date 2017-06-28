@@ -10,8 +10,8 @@
 #include "YYImage.h"
 
 
-static const CGFloat kFerrariW = 750.0;
-static const CGFloat kFerrariH = 329.0;
+//static const CGFloat kFerrariW = 750.0;
+//static const CGFloat kFerrariH = 329.0;
 
 static const CGFloat kFerrariDoorW = 171.0;
 static const CGFloat kFerrariDoorH = 101.0;
@@ -58,8 +58,13 @@ static const CGFloat kFerrariFrontLH = 81.0;
 }
 
 - (void)stop {
-    //TODO
-    [self.layer removeAllAnimations];
+    for (CALayer *layer in self.layer.sublayers) {
+        [layer removeAllAnimations];
+    }
+    if (self.lightView) {
+        [self.lightView stopAnimating];
+    }
+    [self reset];
 }
 
 #pragma mark - 构造车身控件
@@ -186,32 +191,35 @@ static const CGFloat kFerrariFrontLH = 81.0;
     [UIView animateKeyframesWithDuration:3 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear| UIViewKeyframeAnimationOptionAllowUserInteraction animations:^{
         
         //Frame 1 ,车进场
-        [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.25 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.17 animations:^{
             self.carBox.frame = frame;
         }];
         
         //Frame 2
-        [UIView addKeyframeWithRelativeStartTime:0.05 relativeDuration:0.15 animations:^{
-            [self.fTireFrame.layer setTransform:CATransform3DRotate(self.fTireFrame.layer.transform, 3.14, 0, 0, -1)];
+        [UIView addKeyframeWithRelativeStartTime:0.05 relativeDuration:0.12 animations:^{
+            for (NSInteger i = 0; i < 3; i ++ ) {
+                CATransform3D transform = CATransform3DRotate(self.fTireFrame.layer.transform, M_PI, 0, 0, -1);
+                self.fTireFrame.layer.transform = CATransform3DConcat(self.fTireFrame.layer.transform, transform);
+            }
             [self.bTireFrame.layer setTransform:CATransform3DRotate(self.bTireFrame.layer.transform, 3.14, 0, 0, -1)];
         }];
         
         //Frame 3 ,车门打开，光晕开始显现
-        [UIView addKeyframeWithRelativeStartTime:0.25 relativeDuration:0.15 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.20 relativeDuration:0.15 animations:^{
             self.mainFrameCover.alpha = 0.8;
             self.lDoorFrame.transform = CGAffineTransformMakeRotation(-M_PI / 4.0);
             self.rDoorFrame.transform = CGAffineTransformMakeRotation(-M_PI / 4.0);
         }];
         
         //Frame 4 ,光晕跳动0
-        [UIView addKeyframeWithRelativeStartTime:0.4 relativeDuration:0.05 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.35 relativeDuration:0.05 animations:^{
             self.mainFrameCover.alpha = 0.3;
             self.lFrontLightFrame.alpha = 0.5;
             self.rFrontLightFrame.alpha = 0.5;
         }];
         
         //Frame 4 ,光晕跳动1
-        [UIView addKeyframeWithRelativeStartTime:0.45 relativeDuration:0.03 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.40 relativeDuration:0.05 animations:^{
             self.mainFrameCover.alpha = 0.5;
             self.lFrontLightFrame.alpha = 1.0;
             self.rFrontLightFrame.alpha = 1.0;
@@ -246,7 +254,7 @@ static const CGFloat kFerrariFrontLH = 81.0;
         }];
         
         //Frame 6 ,光晕消失，关门，前车灯灭
-        [UIView addKeyframeWithRelativeStartTime:0.6 relativeDuration:0.15 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.6 relativeDuration:0.20 animations:^{
             self.mainFrameCover.alpha = 0.0;
             self.lFrontLightFrame.alpha = 0.0;
             self.rFrontLightFrame.alpha = 0.0;
@@ -255,7 +263,7 @@ static const CGFloat kFerrariFrontLH = 81.0;
         }];
         
         //Frame 7 ,车身开走, 车轮转动
-        [UIView addKeyframeWithRelativeStartTime:0.75 relativeDuration:0.25 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.84 relativeDuration:0.16 animations:^{
             [self.fTireFrame.layer setTransform:CATransform3DRotate(self.fTireFrame.layer.transform, 3.14, 0, 0, -1)];
             [self.bTireFrame.layer setTransform:CATransform3DRotate(self.bTireFrame.layer.transform, 3.14, 0, 0, -1)];
             self.carBox.frame = endFrame;
@@ -266,7 +274,7 @@ static const CGFloat kFerrariFrontLH = 81.0;
     }];
     
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.65 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.55 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (!self.lightView.superview) {
             return;
         }
@@ -283,6 +291,7 @@ static const CGFloat kFerrariFrontLH = 81.0;
     self.mainFrameCover.alpha = 0;
     self.lightView.currentAnimatedImageIndex = 0;
     //[self removeFromSuperview];
+    [self startKeyframeAnimation];
 }
 
 @end
