@@ -72,17 +72,21 @@
  *         返回计算好的相对于控件本身frame的进场位置，可参考Ferrari实现
  */
 - (CGFloat)enterPositonX;
+- (CGFloat)enterPositonY;
 
 /**
  * 工具方法，如果动画是从屏幕左右侧进出，
  *         返回计算好的相对于控件本身frame的出场位置，可参考Ferrari实现
  */
 - (CGFloat)quitPositionX;
+- (CGFloat)quitPositionY;
 
 
 /**
  * 标识符
  */
 - (NSString *)uniqueIdentifier;
+
+- (CGFloat)vScreenWidth;
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CBD75B1DE74D4BD5804A489 /* libPods-demoForAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 718CE3F779E2F1C2277D3763 /* libPods-demoForAnimation.a */; };
+		931974631F04AD17006BD97A /* TestTireView.m in Sources */ = {isa = PBXBuildFile; fileRef = 931974621F04AD17006BD97A /* TestTireView.m */; };
 		9333961F1EF2A1D400C5A1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9333961E1EF2A1D400C5A1B7 /* main.m */; };
 		933396221EF2A1D400C5A1B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396211EF2A1D400C5A1B7 /* AppDelegate.m */; };
 		933396251EF2A1D400C5A1B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396241EF2A1D400C5A1B7 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 		9333962D1EF2A1D400C5A1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9333962B1EF2A1D400C5A1B7 /* LaunchScreen.storyboard */; };
 		933396381EF2A1D400C5A1B7 /* demoForAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396371EF2A1D400C5A1B7 /* demoForAnimationTests.m */; };
 		933396431EF2A1D500C5A1B7 /* demoForAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */; };
+		935713C31F04C33200620165 /* LiveHelicopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 935713C21F04C33200620165 /* LiveHelicopter.m */; };
+		935713C51F04C3C600620165 /* helicopter in Resources */ = {isa = PBXBuildFile; fileRef = 935713C41F04C3C600620165 /* helicopter */; };
 		93AF4CBA1EF7B18D00F604CB /* LiveNativeGift.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AF4CB91EF7B18D00F604CB /* LiveNativeGift.m */; };
 		A10F32041EF2E82A004C5022 /* LiveGiftFerrari.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */; };
 		A10F32061EF2E8C3004C5022 /* car in Resources */ = {isa = PBXBuildFile; fileRef = A10F32051EF2E8C3004C5022 /* car */; };
@@ -40,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		718CE3F779E2F1C2277D3763 /* libPods-demoForAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demoForAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		931974611F04AD17006BD97A /* TestTireView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTireView.h; sourceTree = "<group>"; };
+		931974621F04AD17006BD97A /* TestTireView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTireView.m; sourceTree = "<group>"; };
 		9333961A1EF2A1D400C5A1B7 /* demoForAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoForAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9333961E1EF2A1D400C5A1B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		933396201EF2A1D400C5A1B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 		9333963E1EF2A1D500C5A1B7 /* demoForAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoForAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoForAnimationUITests.m; sourceTree = "<group>"; };
 		933396441EF2A1D500C5A1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935713C11F04C33200620165 /* LiveHelicopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveHelicopter.h; sourceTree = "<group>"; };
+		935713C21F04C33200620165 /* LiveHelicopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveHelicopter.m; sourceTree = "<group>"; };
+		935713C41F04C3C600620165 /* helicopter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = helicopter; sourceTree = "<group>"; };
 		93AF4CB81EF7B18D00F604CB /* LiveNativeGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveNativeGift.h; sourceTree = "<group>"; };
 		93AF4CB91EF7B18D00F604CB /* LiveNativeGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveNativeGift.m; sourceTree = "<group>"; };
 		A10F32021EF2E82A004C5022 /* LiveGiftFerrari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveGiftFerrari.h; sourceTree = "<group>"; };
@@ -94,6 +102,7 @@
 		933396111EF2A1D400C5A1B7 = {
 			isa = PBXGroup;
 			children = (
+				935713C41F04C3C600620165 /* helicopter */,
 				A10F32051EF2E8C3004C5022 /* car */,
 				9333961C1EF2A1D400C5A1B7 /* demoForAnimation */,
 				933396361EF2A1D400C5A1B7 /* demoForAnimationTests */,
@@ -130,6 +139,10 @@
 				9333962B1EF2A1D400C5A1B7 /* LaunchScreen.storyboard */,
 				9333962E1EF2A1D400C5A1B7 /* Info.plist */,
 				9333961D1EF2A1D400C5A1B7 /* Supporting Files */,
+				931974611F04AD17006BD97A /* TestTireView.h */,
+				931974621F04AD17006BD97A /* TestTireView.m */,
+				935713C11F04C33200620165 /* LiveHelicopter.h */,
+				935713C21F04C33200620165 /* LiveHelicopter.m */,
 			);
 			path = demoForAnimation;
 			sourceTree = "<group>";
@@ -291,6 +304,7 @@
 			files = (
 				9333962D1EF2A1D400C5A1B7 /* LaunchScreen.storyboard in Resources */,
 				A10F32061EF2E8C3004C5022 /* car in Resources */,
+				935713C51F04C3C600620165 /* helicopter in Resources */,
 				9333962A1EF2A1D400C5A1B7 /* Assets.xcassets in Resources */,
 				933396281EF2A1D400C5A1B7 /* Main.storyboard in Resources */,
 			);
@@ -367,7 +381,9 @@
 			files = (
 				933396251EF2A1D400C5A1B7 /* ViewController.m in Sources */,
 				A10F32041EF2E82A004C5022 /* LiveGiftFerrari.m in Sources */,
+				931974631F04AD17006BD97A /* TestTireView.m in Sources */,
 				933396221EF2A1D400C5A1B7 /* AppDelegate.m in Sources */,
+				935713C31F04C33200620165 /* LiveHelicopter.m in Sources */,
 				9333961F1EF2A1D400C5A1B7 /* main.m in Sources */,
 				93AF4CBA1EF7B18D00F604CB /* LiveNativeGift.m in Sources */,
 			);

@@ -65,6 +65,12 @@
 - (void)reset {}
 
 #pragma mark - 控件宽度，高度
+- (CGFloat)vScreenWidth {
+    CGFloat w = [UIScreen mainScreen].bounds.size.width;
+    CGFloat h = [UIScreen mainScreen].bounds.size.height;
+    return MIN(w, h);
+}
+
 - (CGFloat)widgetWidth {
     if (_preferedWidth > 0) {
         return _preferedWidth;
@@ -109,9 +115,17 @@
     return widgetWidth + (w - widgetWidth) / 2.0;
 }
 
+- (CGFloat)enterPositonY {
+    return 0.0;
+}
+
 #pragma mark 进场相对位置
 - (CGFloat)quitPositionX {
     return -[self enterPositonX];
+}
+
+- (CGFloat)quitPositionY {
+    return 0.0;
 }
 
 #pragma mark - 动画标识符
