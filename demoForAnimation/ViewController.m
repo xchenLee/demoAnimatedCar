@@ -10,11 +10,14 @@
 #import "LiveGiftFerrari.h"
 #import "TestTireView.h"
 #import "LiveHelicopter.h"
+#import "LiveCruise.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) LiveGiftFerrari *ferrari;
 @property (nonatomic, strong) LiveHelicopter *helicopter;
+@property (nonatomic, strong) LiveCruise *curise;
+
 
 @property (nonatomic, strong) TestTireView *tireView;
 
@@ -49,10 +52,10 @@
     [self.tireView play];*/
 //    
     CGFloat preferedWidth = [UIScreen mainScreen].bounds.size.width - 100;
-    self.helicopter = [[LiveHelicopter alloc] initWithOriginWidth:466 originHeight:267 preferedWidth:preferedWidth];
-    self.helicopter.center = self.view.center;
-    [self.view addSubview:self.helicopter];
-    [self.helicopter play];
+//    self.helicopter = [[LiveHelicopter alloc] initWithOriginWidth:466 originHeight:267 preferedWidth:preferedWidth];
+//    self.helicopter.center = self.view.center;
+//    [self.view addSubview:self.helicopter];
+//    [self.helicopter play];
     
 //    self.ferrari = [[LiveGiftFerrari alloc] initWithOriginWidth:750.0 originHeight:329.0];
 //    [self.ferrari construct];
@@ -60,6 +63,12 @@
 //    self.view.backgroundColor = [UIColor blackColor];
 //    [self.view addSubview:self.ferrari];
 //    [self.ferrari play];
+    
+    self.curise = [[LiveCruise alloc] initWithOriginWidth:750 originHeight:454];
+    self.curise.center = self.view.center;
+    [self.view addSubview:self.curise];
+    [self.curise play];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changed:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
@@ -69,8 +78,8 @@
 
 - (void)clickStart {
 //    [self.ferrari play];
-    [self.helicopter reset];
-    [self.helicopter play];
+//    [self.helicopter reset];
+//    [self.helicopter play];
 }
 
 
