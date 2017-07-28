@@ -11,13 +11,15 @@
 #import "TestTireView.h"
 #import "LiveHelicopter.h"
 #import "LiveCruise.h"
+#import "LiveCastle.h"
+#import "SingleSequelChecker.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) LiveGiftFerrari *ferrari;
 @property (nonatomic, strong) LiveHelicopter *helicopter;
 @property (nonatomic, strong) LiveCruise *curise;
-
+@property (nonatomic, strong) LiveCastle *castle;
 
 @property (nonatomic, strong) TestTireView *tireView;
 
@@ -50,30 +52,37 @@
     self.tireView.center = self.view.center;
     [self.view addSubview:self.tireView];
     [self.tireView play];*/
-//    
-    CGFloat preferedWidth = [UIScreen mainScreen].bounds.size.width - 100;
-//    self.helicopter = [[LiveHelicopter alloc] initWithOriginWidth:466 originHeight:267 preferedWidth:preferedWidth];
-//    self.helicopter.center = self.view.center;
-//    [self.view addSubview:self.helicopter];
-//    [self.helicopter play];
     
-//    self.ferrari = [[LiveGiftFerrari alloc] initWithOriginWidth:750.0 originHeight:329.0];
-//    [self.ferrari construct];
-//    self.ferrari.center = self.view.center;
-//    self.view.backgroundColor = [UIColor blackColor];
-//    [self.view addSubview:self.ferrari];
-//    [self.ferrari play];
+    /*self.helicopter = [[LiveHelicopter alloc] initWithOriginWidth:750 originHeight:300];
+    self.helicopter.center = self.view.center;
+    [self.view addSubview:self.helicopter];
+    [self.helicopter play];*/
     
-    self.curise = [[LiveCruise alloc] initWithOriginWidth:750 originHeight:454];
-    self.curise.center = self.view.center;
-    [self.view addSubview:self.curise];
-    [self.curise play];
+    /*self.ferrari = [[LiveGiftFerrari alloc] initWithOriginWidth:750.0 originHeight:329.0];
+    [self.ferrari construct];
+    self.ferrari.center = self.view.center;
+    self.view.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.ferrari];
+    [self.ferrari play];*/
+    
+    //self.curise = [[LiveCruise alloc] initWithOriginWidth:750 originHeight:454];
+    //self.curise.center = self.view.center;
+    //[self.view addSubview:self.curise];
+    //[self.curise play];
+    
+    self.castle = [[LiveCastle alloc] initWithOriginWidth:750 originHeight:624];
+    self.castle.center = self.view.center;
+    [self.view addSubview:self.castle];
+    [self.castle play];
+    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changed:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
 - (void)clickStop {
 //    [self.ferrari stop];
+    SingleSequelChecker *checker = [[SingleSequelChecker alloc] init];
+    [self showViewController:checker sender:nil];
 }
 
 - (void)clickStart {
@@ -87,6 +96,7 @@
 - (void)changed:(NSNotification *)notification {
     self.ferrari.center = self.view.center;
     self.helicopter.center = self.view.center;
+    self.castle.center = self.view.center;
 }
 
 - (void)dealloc {
@@ -95,7 +105,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

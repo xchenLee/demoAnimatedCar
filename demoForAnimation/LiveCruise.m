@@ -24,6 +24,7 @@ static const CGFloat kWave1H = 68;
 static const CGFloat kWave2W = 89;
 static const CGFloat kWave2H = 80;
 
+
 @interface LiveCruise()
 
 @property (nonatomic, strong) UIView *boxView;
@@ -188,7 +189,6 @@ static const CGFloat kWave2H = 80;
     
     self.wave1Image = [[YYFrameImage alloc] initWithImagePaths:self.wave1Frames frameDurations:self.wave1Durati loopCount:0];
     
-    
     // 海浪2
     self.wave2Frames = [NSMutableArray array];
     self.wave2Durati = [NSMutableArray array];
@@ -283,18 +283,5 @@ static const CGFloat kWave2H = 80;
     return tan(M_PI / 16) * ([self enterPositonX] - [self quitPositionX]);
 }
 
-
 @end
-
-
-
-
-
-
-
-
-
-
-
-
 

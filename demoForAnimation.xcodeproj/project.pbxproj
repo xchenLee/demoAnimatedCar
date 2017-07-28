@@ -18,10 +18,14 @@
 		9333962D1EF2A1D400C5A1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9333962B1EF2A1D400C5A1B7 /* LaunchScreen.storyboard */; };
 		933396381EF2A1D400C5A1B7 /* demoForAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396371EF2A1D400C5A1B7 /* demoForAnimationTests.m */; };
 		933396431EF2A1D500C5A1B7 /* demoForAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */; };
+		933788F91F25D21E004262A2 /* LiveCastle.m in Sources */ = {isa = PBXBuildFile; fileRef = 933788F81F25D21E004262A2 /* LiveCastle.m */; };
 		935713C31F04C33200620165 /* LiveHelicopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 935713C21F04C33200620165 /* LiveHelicopter.m */; };
 		935713C51F04C3C600620165 /* helicopter in Resources */ = {isa = PBXBuildFile; fileRef = 935713C41F04C3C600620165 /* helicopter */; };
 		937469051F1F654C0076FA68 /* cruise in Resources */ = {isa = PBXBuildFile; fileRef = 937469041F1F654C0076FA68 /* cruise */; };
 		93AF4CBA1EF7B18D00F604CB /* LiveNativeGift.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AF4CB91EF7B18D00F604CB /* LiveNativeGift.m */; };
+		93BF37601F284A300026A87D /* AnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF375F1F284A300026A87D /* AnimatedImageView.m */; };
+		93D69AB31F25D902003A2715 /* castle in Resources */ = {isa = PBXBuildFile; fileRef = 93D69AB21F25D902003A2715 /* castle */; };
+		93D69AB61F26DE15003A2715 /* SingleSequelChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69AB51F26DE15003A2715 /* SingleSequelChecker.m */; };
 		A10F32041EF2E82A004C5022 /* LiveGiftFerrari.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */; };
 		A10F32061EF2E8C3004C5022 /* car in Resources */ = {isa = PBXBuildFile; fileRef = A10F32051EF2E8C3004C5022 /* car */; };
 /* End PBXBuildFile section */
@@ -65,12 +69,19 @@
 		9333963E1EF2A1D500C5A1B7 /* demoForAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoForAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933396421EF2A1D500C5A1B7 /* demoForAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoForAnimationUITests.m; sourceTree = "<group>"; };
 		933396441EF2A1D500C5A1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933788F71F25D21E004262A2 /* LiveCastle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveCastle.h; sourceTree = "<group>"; };
+		933788F81F25D21E004262A2 /* LiveCastle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveCastle.m; sourceTree = "<group>"; };
 		935713C11F04C33200620165 /* LiveHelicopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveHelicopter.h; sourceTree = "<group>"; };
 		935713C21F04C33200620165 /* LiveHelicopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveHelicopter.m; sourceTree = "<group>"; };
 		935713C41F04C3C600620165 /* helicopter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = helicopter; sourceTree = "<group>"; };
 		937469041F1F654C0076FA68 /* cruise */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cruise; sourceTree = "<group>"; };
 		93AF4CB81EF7B18D00F604CB /* LiveNativeGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveNativeGift.h; sourceTree = "<group>"; };
 		93AF4CB91EF7B18D00F604CB /* LiveNativeGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveNativeGift.m; sourceTree = "<group>"; };
+		93BF375E1F284A300026A87D /* AnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedImageView.h; sourceTree = "<group>"; };
+		93BF375F1F284A300026A87D /* AnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedImageView.m; sourceTree = "<group>"; };
+		93D69AB21F25D902003A2715 /* castle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = castle; sourceTree = "<group>"; };
+		93D69AB41F26DE15003A2715 /* SingleSequelChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleSequelChecker.h; sourceTree = "<group>"; };
+		93D69AB51F26DE15003A2715 /* SingleSequelChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleSequelChecker.m; sourceTree = "<group>"; };
 		A10F32021EF2E82A004C5022 /* LiveGiftFerrari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveGiftFerrari.h; sourceTree = "<group>"; };
 		A10F32031EF2E82A004C5022 /* LiveGiftFerrari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveGiftFerrari.m; sourceTree = "<group>"; };
 		A10F32051EF2E8C3004C5022 /* car */ = {isa = PBXFileReference; lastKnownFileType = folder; path = car; sourceTree = "<group>"; };
@@ -107,6 +118,7 @@
 		933396111EF2A1D400C5A1B7 = {
 			isa = PBXGroup;
 			children = (
+				93D69AB21F25D902003A2715 /* castle */,
 				937469041F1F654C0076FA68 /* cruise */,
 				935713C41F04C3C600620165 /* helicopter */,
 				A10F32051EF2E8C3004C5022 /* car */,
@@ -151,6 +163,12 @@
 				935713C21F04C33200620165 /* LiveHelicopter.m */,
 				93138A531F1F3FD9005C4972 /* LiveCruise.h */,
 				93138A541F1F3FD9005C4972 /* LiveCruise.m */,
+				933788F71F25D21E004262A2 /* LiveCastle.h */,
+				933788F81F25D21E004262A2 /* LiveCastle.m */,
+				93D69AB41F26DE15003A2715 /* SingleSequelChecker.h */,
+				93D69AB51F26DE15003A2715 /* SingleSequelChecker.m */,
+				93BF375E1F284A300026A87D /* AnimatedImageView.h */,
+				93BF375F1F284A300026A87D /* AnimatedImageView.m */,
 			);
 			path = demoForAnimation;
 			sourceTree = "<group>";
@@ -313,6 +331,7 @@
 				9333962D1EF2A1D400C5A1B7 /* LaunchScreen.storyboard in Resources */,
 				A10F32061EF2E8C3004C5022 /* car in Resources */,
 				935713C51F04C3C600620165 /* helicopter in Resources */,
+				93D69AB31F25D902003A2715 /* castle in Resources */,
 				9333962A1EF2A1D400C5A1B7 /* Assets.xcassets in Resources */,
 				933396281EF2A1D400C5A1B7 /* Main.storyboard in Resources */,
 				937469051F1F654C0076FA68 /* cruise in Resources */,
@@ -394,7 +413,10 @@
 				931974631F04AD17006BD97A /* TestTireView.m in Sources */,
 				933396221EF2A1D400C5A1B7 /* AppDelegate.m in Sources */,
 				935713C31F04C33200620165 /* LiveHelicopter.m in Sources */,
+				93BF37601F284A300026A87D /* AnimatedImageView.m in Sources */,
+				933788F91F25D21E004262A2 /* LiveCastle.m in Sources */,
 				9333961F1EF2A1D400C5A1B7 /* main.m in Sources */,
+				93D69AB61F26DE15003A2715 /* SingleSequelChecker.m in Sources */,
 				93AF4CBA1EF7B18D00F604CB /* LiveNativeGift.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

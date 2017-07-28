@@ -8,8 +8,8 @@
 
 #import "LiveHelicopter.h"
 
-//static const CGFloat kLiveHelicopterW = 466.0;
-//static const CGFloat kLiveHelicopterH = 4267.0;
+static const CGFloat kLiveHelicopterW = 466.0 * 1.1;
+static const CGFloat kLiveHelicopterH = 267.0 * 1.1;
 static const CGFloat kLiveHPropellerPW = 124.0;
 static const CGFloat kLiveHPropellerPH = 277.0;
 
@@ -73,8 +73,8 @@ static const CGFloat kLiveHClound03H = 111.0 * 0.8;
     self.bPropellerView.image = [UIImage imageNamed:@"helicopter/bpropeller"];
     
     CGRect bPFrame = self.bPropellerView.frame;
-    bPFrame.origin.x = [self valueCompat:398];
-    bPFrame.origin.y = [self valueCompat:-26]; // 134
+    bPFrame.origin.x = [self valueCompat:560];
+    bPFrame.origin.y = [self valueCompat:66]; // 134
     self.bPropellerView.frame = bPFrame;
     CATransform3D btransform = CATransform3DMakeRotation(M_PI * 2 / 3, 0, 1, 0);
     self.bPropellerView.layer.transform = btransform;
@@ -84,7 +84,10 @@ static const CGFloat kLiveHClound03H = 111.0 * 0.8;
     //机身
     boxFrame.origin.x = 0;
     self.bodyView = [UIImageView new];
-    self.bodyView.frame = boxFrame;
+    CGFloat bodyW = [self valueCompat:kLiveHelicopterW];
+    CGFloat bodyH = [self valueCompat:kLiveHelicopterH];
+
+    self.bodyView.frame = CGRectMake((self.widgetWidth - bodyW)/2, (self.widgetHeight - bodyH)/2, bodyW, bodyH);
     self.bodyView.image = [self loadImage:@"helicopter/helicopter"];
     [self.boxView addSubview:self.bodyView];
     
@@ -181,7 +184,7 @@ static const CGFloat kLiveHClound03H = 111.0 * 0.8;
     CGFloat propellerSize = propellerHalf * 2;
     
     self.propellerView = [UIView new];
-    self.propellerView.frame = CGRectMake(-50, -116, propellerSize, propellerSize);
+    self.propellerView.frame = CGRectMake([self valueCompat:-64], [self valueCompat:-196], propellerSize, propellerSize);
     [self.bodyView addSubview:self.propellerView];
     
     UIImage *paddleImage = [self loadImage:@"helicopter/fpropeller_singular"];
@@ -231,7 +234,7 @@ static const CGFloat kLiveHClound03H = 111.0 * 0.8;
 }
 
 - (void)startKeyFrameAnimation {
-    [UIView animateKeyframesWithDuration:3 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+    [UIView animateKeyframesWithDuration:4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         
         //机身进场
         [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.18 animations:^{
@@ -290,11 +293,6 @@ static const CGFloat kLiveHClound03H = 111.0 * 0.8;
         [self reset];
     }];
     
-    //之前撒花的粒子效果取消，注释代码
-    /*dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self startEmittion];
-    });*/
-    
 }
 
 - (void)rotatePropellerWithDuration:(NSTimeInterval)duration{
@@ -307,38 +305,6 @@ static const CGFloat kLiveHClound03H = 111.0 * 0.8;
         [self rotatePropellerWithDuration:duration];
     }];
 }
-
-/*- (void)startEmittion {
-    
-    self.emitter = [[CAEmitterLayer alloc] init];
-    self.emitter.emitterPosition = CGPointMake(self.widgetWidth / 2 - 40, - 70);
-    self.emitter.renderMode = kCAEmitterLayerAdditive;
-    self.emitter.preservesDepth = YES;
-    
-    CAEmitterCell * smoke = [CAEmitterCell emitterCell];
-
-    smoke.birthRate = 100;
-    smoke.lifetime = 3.0;
-    smoke.lifetimeRange = 1;
-    smoke.scale = 0.5;
-    smoke.scaleRange = 0.5;
-    smoke.color= [UIColor colorWithRed:0 green:1 blue:0 alpha:0.2].CGColor;
-    smoke.alphaRange = 1;
-    smoke.redRange = 255;
-    smoke.blueRange = 22;
-    smoke.greenRange = 1.5;
-    [smoke setName:@"smoke"];
-    smoke.contents = (id)[self loadImage:@"helicopter/colorfly"].CGImage;
-
-    smoke.yAcceleration = 70.0;  //给Y方向一个加速度
-    smoke.xAcceleration = 20.0; //x方向一个加速度
-    smoke.velocity = 20.0; //初始速度
-    smoke.emissionLongitude = -M_PI; //向左
-    smoke.velocityRange = 200.0;   //随机速度 -200+20 --- 200+20
-    smoke.emissionRange = M_PI_2; //随机方向 -pi/2 --- pi/2
-    self.emitter.emitterCells = [NSArray arrayWithObjects:smoke,nil];
-    [self.coverView.layer addSublayer:self.emitter];
-}*/
 
 - (CGFloat)enterPositonY {
     return  -0.3 * self.widgetHeight;

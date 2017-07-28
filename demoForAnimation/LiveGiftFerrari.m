@@ -206,7 +206,7 @@ static const CGFloat kFerrariFrontLH = 81.0;
         
         //Frame 3 ,车门打开，光晕开始显现
         [UIView addKeyframeWithRelativeStartTime:0.20 relativeDuration:0.15 animations:^{
-            self.mainFrameCover.alpha = 0.8;
+            self.mainFrameCover.alpha = 0.7;
             self.lDoorFrame.transform = CGAffineTransformMakeRotation(-M_PI / 4.0);
             self.rDoorFrame.transform = CGAffineTransformMakeRotation(-M_PI / 4.0);
         }];
